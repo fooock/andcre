@@ -51,10 +51,6 @@ The gradle version used is the `gradle-3.5.1`
 ### Quality tools
 In the project root, a directory called `quality` is created. It contains all files needed to execute the static analysis tools and style checkers like findbugs, checkstyle, pmd and android lint. To generate all these reports execute
 ```sh
-$ ./gradlew build
-```
-or 
-```sh
 $ ./gradlew check
 ```
 Note that if you add more modules to the project, this task is applied. The reports are generated in the `<project>/app/build/reports` directory
@@ -64,3 +60,10 @@ All quality files [are from this fantastic repo!](https://github.com/Piasy/Andro
 ### Git
 When the project is created a new git repository is initialized. You can use the gradle task `printVersion` to check out it.
 
+### App module
+For default the `AndroidManifest.xml` has the `INTERNET` permission. For each build type (debug/release) a `DefaultApplication` is created with different log configurations.
+* For the **debug** type a `Timber.DebugTree()` is initialized. 
+* For the **release** type a custom `CrashReportingTree()` is created. This tree discards automatically all `DEBUG` and `VERBOSE` logs, and can be able to report all errors and warnings using the `CrashLibrary` class
+
+
+## Final Android project
