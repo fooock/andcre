@@ -67,3 +67,11 @@ For default the `AndroidManifest.xml` has the `INTERNET` permission. For each bu
 
 
 ## Final Android project
+The result project structure is like this:
+
+![](https://github.com/fooock/andcre/blob/master/media/img1.png)
+
+![](https://github.com/fooock/andcre/blob/master/media/img2.png) 
+
+![](https://github.com/fooock/andcre/blob/master/media/img3.png)
+
