@@ -1,7 +1,7 @@
 # andcre
 Andcre (android creator) is a python script to create professional and ready to use Android projects. 
 
-[andcre]: https://github.com/fooock/andcre/blob/master/media/andcre_project.png "Project created with andcre"
+![](https://github.com/fooock/andcre/blob/master/media/andcre_project.png) "Project created with andcre"
 
 ## Requirements
 andcre works with `python3`
