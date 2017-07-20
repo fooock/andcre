@@ -1,0 +1,33 @@
+apply from: "buildsystem/dependencies.gradle"
+apply from: "buildsystem/project.gradle"
+apply from: "buildsystem/version.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+subprojects {
+    apply from: "$rootProject.projectDir/quality/quality.gradle"
+
+    afterEvaluate {
+        check.dependsOn 'checkstyle', 'findbugs', 'pmd', 'lint'
+   }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

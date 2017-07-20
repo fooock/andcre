@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="%s">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DefaultApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".%s"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+    </application>
+
+</manifest>
