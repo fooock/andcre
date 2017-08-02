@@ -1,6 +1,7 @@
 import os
 import shutil
 import stat
+import sys
 
 
 def make_file_executable(file):
@@ -56,3 +57,7 @@ def read_file_content(name):
 
 def copy_dir(from_dir, to_dir):
     shutil.copytree(from_dir, to_dir)
+
+
+def from_this(name):
+    return absolute_path_from(sys.path[0], name)
