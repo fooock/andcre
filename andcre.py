@@ -124,4 +124,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print(Fore.RED + "\n [-] Bye bye!\n" + Fore.RESET)
+        sys.exit()
