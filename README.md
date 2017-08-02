@@ -23,6 +23,8 @@ $ export ANDCRE=/home/user/AndroidProjects
 ```
 If the environment variable is not found, the program will request it every time a new project is created
 
+Execute the script or set the `andcre.bat` or `andcre.sh` to the `$PATH`
+
 ## Features
 andcre create android projects with a lot of useful files and tools. It include support for android lint, findbugs, checkstyle and pmd. Automatically create a git repo, add all project files, commit and create the first tag.
 
