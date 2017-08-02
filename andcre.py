@@ -8,10 +8,10 @@ init()
 
 
 banner = """
- ____ _  _ ___  ____ ____ ____ 
- |__| |\ | |  \ |    |__/ |___ 
- |  | | \| |__/ |___ |  \ |___ 
-                                                        
+ ____ _  _ ___  ____ ____ ____
+ |__| |\ | |  \ |    |__/ |___
+ |  | | \| |__/ |___ |  \ |___
+
 """
 
 
@@ -70,11 +70,15 @@ def delete_existing_project():
 
 def initialize_git_repo(current):
     os.chdir(current)
-    result = subprocess.Popen(['git', 'init'], stdout=subprocess.PIPE)
+    result = subprocess.Popen(['git', 'init'],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     res1 = result.communicate()[0]
-    subprocess.Popen(['git', 'add', '.'], stdout=subprocess.PIPE).wait()
-    subprocess.Popen(['git', 'commit', '-m', 'First commit'], stdout=subprocess.PIPE).wait()
-    subprocess.Popen(['git', 'tag', '-a', '0.1', '-m', 'First alpha version'], stdout=subprocess.PIPE).wait()
+    subprocess.Popen(['git', 'add', '.'],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+    subprocess.Popen(['git', 'commit', '-m', 'First commit'],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+    subprocess.Popen(['git', 'tag', '-a', '0.1', '-m', 'First alpha version'],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
     print(Fore.MAGENTA + " [+] " + str(res1, 'utf-8') + Fore.RESET)
 
 
