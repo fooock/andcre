@@ -17,7 +17,7 @@ public class DefaultApplication extends %s {
     /**
      * Logs important information for crash reporting
      */
-    private final static class CrashReportingTree extends Timber.Tree {
+    private static final class CrashReportingTree extends Timber.Tree {
 
         @Override
         protected void log(int priority, String tag, String message, Throwable throwable) {
