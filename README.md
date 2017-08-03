@@ -14,7 +14,7 @@ $ cd andcre
 ```
 Now install the dependencies
 ```sh
-$ pip3 install -r requeriments.txt
+$ pip3 install -r requirements.txt
 ```
 Create the environment variable **ANDCRE** to point to your android workspace.
 This is where the projects will be created.

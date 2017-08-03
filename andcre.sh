@@ -1,2 +1,2 @@
-current = $(pwd)
+current=$(pwd)
 python ./$current/andcre.py
