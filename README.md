@@ -1,5 +1,5 @@
 # andcre
-Andcre (android creator) is a python script to create professional and ready to use Android projects. 
+Andcre (android creator) is a python script to create professional and ready to use Android projects.
 
 ![](https://github.com/fooock/andcre/blob/master/media/andcre_project.png) "Project created with andcre"
 
@@ -30,17 +30,17 @@ andcre create android projects with a lot of useful files and tools. It include 
 
 ### Project files
 * Create automatically a `README.md` file, that contains the project name.
-* Create a `CHANGELOG.md` file and automatically write the name of the current version 
-and the current date 
+* Create a `CHANGELOG.md` file and automatically write the name of the current version
+and the current date
 * Create the `TODO.md` file
 * Create `LICENSE` file
 * Create the `.gitignore` file with the common android ignored files/directories
 * Create the root `build.gradle` file
 
 ### Build system
-The andcre script create a folder in the root project directory called `buildsystem`. 
+The andcre script create a folder in the root project directory called `buildsystem`.
 It contains three files:
-* `dependencies.gradle`: Contains the dependencies of the project (test dependencies and 
+* `dependencies.gradle`: Contains the dependencies of the project (test dependencies and
 application dependencies)
 * `version.gradle`: Contain all things related to the project version
 * `project.gradle`: Project properties like target sdk, build tools version etc
@@ -64,18 +64,24 @@ When the project is created a new git repository is initialized. You can use the
 
 ### App module
 For default the `AndroidManifest.xml` has the `INTERNET` permission. For each build type (debug/release) a `DefaultApplication` is created with different log configurations.
-* For the **debug** type a `Timber.DebugTree()` is initialized. 
+* For the **debug** type a `Timber.DebugTree()` is initialized.
 * For the **release** type a custom `CrashReportingTree()` is created. This tree discards automatically all `DEBUG` and `VERBOSE` logs, and can be able to report all errors and warnings using the `CrashLibrary` class
 
+The applicatiod id for the debug build type has the `.debug` suffix.
+
+### Apk generation
+All apk's are generated in the `build/outputs/apk` directory. The name of the apk correspond to the project name with the current version. For example, your module name is `app`, and the version is `0.1`, the resulting apk's will be:
+* For the `debug` build type: `app-0.1-debug.apk`
+* For the `release` build type: `app-0.1-release.apk`
 
 ## Final Android project
 The result project structure is like this:
 
 ![](https://github.com/fooock/andcre/blob/master/media/img1.png)
 
-![](https://github.com/fooock/andcre/blob/master/media/img2.png) 
+![](https://github.com/fooock/andcre/blob/master/media/img2.png)
 
 ![](https://github.com/fooock/andcre/blob/master/media/img3.png)
 
 ### Suggestions
-Open an [issue](https://github.com/fooock/andcre/issues) or create a new [pull request](https://github.com/fooock/andcre/pulls) 
+Open an [issue](https://github.com/fooock/andcre/issues) or create a new [pull request](https://github.com/fooock/andcre/pulls)

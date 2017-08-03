@@ -7,9 +7,13 @@ android {
         applicationId "%s"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode rootProject.ext.gitVersionCode
+        versionName rootProject.ext.gitVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // set the name of the generated apk in the form
+        // <projectName>-<versionName>.apk
+        setProperty("archivesBaseName", "$project.name-$versionName")
     }
     buildTypes {
         debug {
