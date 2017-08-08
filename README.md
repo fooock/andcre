@@ -23,7 +23,7 @@ $ export ANDCRE=/home/user/AndroidProjects
 ```
 If the environment variable is not found, the program will request it every time a new project is created
 
-Execute the script or set the `andcre.bat` or `andcre.sh` to the `$PATH` to execute this program from any place!
+Execute the script or set the `andcre.bat` or `andcre` to the `$PATH` to execute this program from any place!
 
 ## Features
 andcre create android projects with a lot of useful files and tools. It include support for android lint, findbugs, checkstyle and pmd. Automatically create a git repo, add all project files, commit and create the first tag.
@@ -85,3 +85,20 @@ The result project structure is like this:
 
 ### Suggestions
 Open an [issue](https://github.com/fooock/andcre/issues) or create a new [pull request](https://github.com/fooock/andcre/pulls)
+
+### License
+```
+Copyright 2017 newhouse (nhitbh at gmail dot com)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
