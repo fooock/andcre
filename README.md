@@ -1,4 +1,7 @@
 # andcre
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-andcre-green.svg?style=flat-square)](https://android-arsenal.com/details/1/6058)
+
 Andcre (android creator) is a python script to create professional and ready to use Android projects.
 
 ![](https://github.com/fooock/andcre/blob/master/media/andcre_project.png) "Project created with andcre"
