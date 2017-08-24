@@ -7,7 +7,7 @@ ext {
 
     junitVersion = "4.12"
     espressoVersion = "2.2.2"
-    mockitoVersion = "2.7.6"
+    mockitoVersion = "2.8.47"
 
     appLibraries = [
             supportAppCompat    : "com.android.support:appcompat-v7:${appCompatVersion}",
