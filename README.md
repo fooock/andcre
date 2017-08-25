@@ -62,6 +62,13 @@ Note that if you add more modules to the project, this task is applied. The repo
 
 All quality files [are from this fantastic repo!](https://github.com/Piasy/AndroidCodeQualityConfig)
 
+### App debug options
+The application create a custom `DefaultApplication` for the `debug` builds and initialize for default custom configurations not needed in application releases. The debug options are:
+* Initialize `Timber` with the `Timber.DebugTree()`
+* Detect all kind of problems and log it using the `StrictMode.setThreadPolicy()` and `StrictMode.setVmPolicy` methods.
+
+**Note**: This configuration **only** applies to debug builds! 
+
 ### Git
 When the project is created a new git repository is initialized. You can use the gradle task `printVersion` to check out it.
 
