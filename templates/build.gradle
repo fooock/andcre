@@ -17,6 +17,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        // need this for the new android APIs
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
