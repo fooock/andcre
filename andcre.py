@@ -1,11 +1,11 @@
-import sys
 import subprocess
 
-from utils import *
-from project import Project
 from colorama import init, Fore, Style
-init()
 
+from project import Project
+from utils import *
+
+init()
 
 banner = """
  ____ _  _ ___  ____ ____ ____
@@ -71,14 +71,14 @@ def delete_existing_project():
 def initialize_git_repo(current):
     os.chdir(current)
     result = subprocess.Popen(['git', 'init'],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     res1 = result.communicate()[0]
     subprocess.Popen(['git', 'add', '.'],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+                     stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
     subprocess.Popen(['git', 'commit', '-m', 'First commit'],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+                     stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
     subprocess.Popen(['git', 'tag', '-a', '0.1', '-m', 'First alpha version'],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+                     stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
     print(Fore.MAGENTA + " [+] " + str(res1, 'utf-8') + Fore.RESET)
 
 
