@@ -4,6 +4,7 @@ ext {
     timberVersion = "4.5.1"
     butterknifeVersion = "8.5.1"
     butterknifeProcessorVersion = "8.5.1"
+    leakCanaryVersion = "1.5.1"
 
     junitVersion = "4.12"
     espressoVersion = "2.2.2"
@@ -14,7 +15,8 @@ ext {
             constraintLayout    : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
             timber              : "com.jakewharton.timber:timber:${timberVersion}",
             butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
-            butterknifeProcessor: "com.jakewharton:butterknife-compiler:${butterknifeProcessorVersion}"
+            butterknifeProcessor: "com.jakewharton:butterknife-compiler:${butterknifeProcessorVersion}",
+            leakCanary          : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
     ]
 
     appTest = [

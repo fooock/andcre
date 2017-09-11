@@ -66,6 +66,7 @@ All quality files [are from this fantastic repo!](https://github.com/Piasy/Andro
 The application create a custom `DefaultApplication` for the `debug` builds and initialize for default custom configurations not needed in application releases. The debug options are:
 * Initialize `Timber` with the `Timber.DebugTree()`
 * Detect all kind of problems and log it using the `StrictMode.setThreadPolicy()` and `StrictMode.setVmPolicy` methods.
+* Setup `LeakCanary`. Only compile in `debugCompile` (see app/build.gradle) 
 
 **Note**: This configuration **only** applies to debug builds! 
 

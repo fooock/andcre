@@ -47,6 +47,8 @@ android {
 }
 
 dependencies {
+    debugCompile rootProject.ext.appLibraries.leakCanary
+    
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile(rootProject.ext.appTest.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'

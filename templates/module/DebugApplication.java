@@ -2,6 +2,8 @@ package %s;
 
 import android.os.StrictMode;
 
+import com.squareup.leakcanary.LeakCanary;
+
 import timber.log.Timber;
 
 /**
@@ -23,5 +25,11 @@ public class DefaultApplication extends %s {
                 .detectAll()
                 .penaltyLog()
                 .build());
+
+        // Leak canary stuff
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+        }
+        LeakCanary.install(this);
     }
 }
