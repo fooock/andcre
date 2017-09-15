@@ -85,6 +85,15 @@ All apk's are generated in the `build/outputs/apk` directory. The name of the ap
 * For the `debug` build type: `app-0.1-debug.apk`
 * For the `release` build type: `app-0.1-release.apk`
 
+### Include open source notices
+The `play-services-oss-licenses` library is included to show the list of licenses used by the libraries included in the application. To show the list you only need to call the code:
+
+```java
+final Intent intent = new Intent(this, OssLicensesMenuActivity.class);
+startActivity(intent);
+```
+You can change the activity title. For more info see [the documentation](https://developers.google.com/android/guides/opensource)
+
 ## Final Android project
 The result project structure is like this:
 

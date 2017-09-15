@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.oss.licenses.plugin'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -58,6 +59,7 @@ dependencies {
     compile rootProject.ext.appLibraries.timber
     compile rootProject.ext.appLibraries.butterknife
     annotationProcessor rootProject.ext.appLibraries.butterknifeProcessor
+    compile rootProject.ext.appLibraries.ossLicenses
 
     testCompile rootProject.ext.appTest.junit
     testCompile rootProject.ext.appTest.mockito
