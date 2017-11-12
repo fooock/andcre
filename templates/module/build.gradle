@@ -4,17 +4,16 @@ apply plugin: 'com.google.gms.oss.licenses.plugin'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+    
     defaultConfig {
         applicationId "%s"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+
         versionCode rootProject.ext.gitVersionCode
         versionName rootProject.ext.gitVersionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        // set the name of the generated apk in the form
-        // <projectName>-<versionName>.apk
-        setProperty("archivesBaseName", "$project.name-$versionName")
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         debug {
