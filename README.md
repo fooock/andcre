@@ -51,7 +51,7 @@ application dependencies)
 The `version.gradle` file is based in [this great post from Dmytro Danylyk on hackernoon](https://hackernoon.com/configuring-android-project-version-name-code-b168952f3323)
 
 ### Gradle wrapper
-The gradle version used is the `gradle-3.5.1`
+The gradle version used is the `gradle-4.3.1`
 
 ### Quality tools
 In the project root, a directory called `quality` is created. It contains all files needed to execute the static analysis tools and style checkers like findbugs, checkstyle, pmd and android lint. To generate all these reports execute
