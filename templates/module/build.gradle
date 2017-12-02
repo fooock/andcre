@@ -47,20 +47,20 @@ android {
 }
 
 dependencies {
-    debugCompile rootProject.ext.appLibraries.leakCanary
-    debugCompile rootProject.ext.appLibraries.stetho
+    debugImplementation rootProject.ext.appLibraries.leakCanary
+    debugImplementation rootProject.ext.appLibraries.stetho
     
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile(rootProject.ext.appTest.espresso, {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation(rootProject.ext.appTest.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile rootProject.ext.appLibraries.supportAppCompat
-    compile rootProject.ext.appLibraries.constraintLayout
-    compile rootProject.ext.appLibraries.timber
-    compile rootProject.ext.appLibraries.butterknife
+    implementation rootProject.ext.appLibraries.supportAppCompat
+    implementation rootProject.ext.appLibraries.constraintLayout
+    implementation rootProject.ext.appLibraries.timber
+    implementation rootProject.ext.appLibraries.butterknife
     annotationProcessor rootProject.ext.appLibraries.butterknifeProcessor
-    compile rootProject.ext.appLibraries.ossLicenses
+    implementation rootProject.ext.appLibraries.ossLicenses
 
-    testCompile rootProject.ext.appTest.junit
-    testCompile rootProject.ext.appTest.mockito
+    testImplementation rootProject.ext.appTest.junit
+    testImplementation rootProject.ext.appTest.mockito
 }
