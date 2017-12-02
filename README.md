@@ -67,6 +67,7 @@ The application create a custom `DefaultApplication` for the `debug` builds and 
 * Initialize `Timber` with the `Timber.DebugTree()`
 * Detect all kind of problems and log it using the `StrictMode.setThreadPolicy()` and `StrictMode.setVmPolicy` methods.
 * Setup `LeakCanary`. Only compile in `debugCompile` (see app/build.gradle) 
+* Initialize the default values for `Stetho`
 
 **Note**: This configuration **only** applies to debug builds! 
 
