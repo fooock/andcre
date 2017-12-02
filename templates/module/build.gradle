@@ -48,6 +48,7 @@ android {
 
 dependencies {
     debugCompile rootProject.ext.appLibraries.leakCanary
+    debugCompile rootProject.ext.appLibraries.stetho
     
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile(rootProject.ext.appTest.espresso, {

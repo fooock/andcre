@@ -2,6 +2,7 @@ package %s;
 
 import android.os.StrictMode;
 
+import com.facebook.stetho.Stetho;
 import com.squareup.leakcanary.LeakCanary;
 
 import timber.log.Timber;
@@ -13,6 +14,9 @@ public class DefaultApplication extends %s {
 
     @Override
     void initialize() {
+        // this does not enable network inspection!
+        Stetho.initializeWithDefaults(this);
+
         Timber.plant(new Timber.DebugTree());
 
         // Detect all kind of problems and log it
