@@ -28,6 +28,12 @@ If the environment variable is not found, the program will request it every time
 
 Execute the script or set the `andcre.bat` or `andcre` to the `$PATH` to execute this program from any place!
 
+## Android project requeriments
+To compile the generated project we need:
+* Java 1.7 or greater (1.8 recommended)
+* Latest Android SDK 
+* Latest Android build tools
+
 ## Features
 andcre create android projects with a lot of useful files and tools. It include support for android lint, findbugs, checkstyle and pmd. Automatically create a git repo, add all project files, commit and create the first tag.
 
@@ -94,6 +100,21 @@ final Intent intent = new Intent(this, OssLicensesMenuActivity.class);
 startActivity(intent);
 ```
 You can change the activity title. For more info see [the documentation](https://developers.google.com/android/guides/opensource)
+
+### Libraries used
+* Android support libraries: *app-compat*, *constraint-layout*
+* [Timber](https://github.com/JakeWharton/timber)
+* [Butterknife](http://jakewharton.github.io/butterknife/)
+* [Google OSS Licenses](https://developers.google.com/android/guides/opensource)
+
+For application debug, I included:
+* [Leak Canary](https://github.com/square/leakcanary)
+* [Stetho](http://facebook.github.io/stetho/)
+
+For application testing:
+* [JUnit 4.12](http://junit.org/junit4/)
+* [Mockito](http://site.mockito.org/)
+* [Espresso](https://developer.android.com/training/testing/espresso/index.html)
 
 ## Final Android project
 The result project structure is like this:
