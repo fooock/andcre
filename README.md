@@ -2,7 +2,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-andcre-green.svg?style=flat-square)](https://android-arsenal.com/details/1/6058)
 
-Andcre (android creator) is a python script to create professional and ready to use Android projects.
+Andcre (android creator) is a python script to avoid boilerplate configs, code etc and create professional and ready to use Android projects.
 
 ![](https://github.com/fooock/andcre/blob/master/media/andcre_project.png) "Project created with andcre"
 
@@ -20,11 +20,11 @@ Now install the dependencies
 $ pip3 install -r requirements.txt
 ```
 Create the environment variable **ANDCRE** to point to your android workspace.
-This is where the projects will be created.
+This is where the android projects will be created.
 ```sh
 $ export ANDCRE=/home/user/AndroidProjects
 ```
-If the environment variable is not found, the program will request it every time a new project is created
+If the environment variable is not set, the program will request it every time a new project is created
 
 Execute the script or set the `andcre.bat` or `andcre` to the `$PATH` to execute this program from any place!
 
@@ -35,7 +35,7 @@ To compile the generated project we need:
 * Latest Android build tools
 
 ## Features
-andcre create android projects with a lot of useful files and tools. It include support for android lint, findbugs, checkstyle and pmd. Automatically create a git repo, add all project files, commit and create the first tag.
+`andcre` create android projects with a lot of useful files and tools. It include support for android lint, findbugs, checkstyle and pmd. Automatically create a git repo, add all project files, commit it  and create the first tag.
 
 ### Project files
 * Create automatically a `README.md` file, that contains the project name.
