@@ -5,7 +5,7 @@ ext {
     butterknifeVersion = "8.8.1"
     butterknifeProcessorVersion = "8.8.1"
     leakCanaryVersion = "1.5.1"
-    ossLicensesVersion = "11.2.2"
+    ossLicensesVersion = "11.6.0"
     stethoVersion = "1.5.0"
 
     junitVersion = "4.12"
