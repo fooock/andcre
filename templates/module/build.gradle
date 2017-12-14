@@ -60,7 +60,10 @@ dependencies {
     implementation rootProject.ext.appLibraries.butterknife
     annotationProcessor rootProject.ext.appLibraries.butterknifeProcessor
     implementation rootProject.ext.appLibraries.ossLicenses
+    implementation rootProject.ext.appLibraries.retrofit
+    implementation rootProject.ext.appLibraries.okhttp3
 
     testImplementation rootProject.ext.appTest.junit
     testImplementation rootProject.ext.appTest.mockito
+    testImplementation rootProject.ext.appTest.mockWebServer
 }

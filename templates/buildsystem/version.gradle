@@ -19,9 +19,9 @@ ext {
 }
 
 task printVersion() {
-    println(" ----------------------------------")
+    println("+----------------------------------")
     println("| Version Name: $gitVersionName")
     println("| Version Code: $gitVersionCode")
     println("| Version Code Time: $gitVersionCodeTime")
-    println(" ----------------------------------")
+    println("+----------------------------------")
 }

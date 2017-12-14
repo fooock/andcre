@@ -98,7 +98,8 @@ class Project(object):
         create_dir(layout_folder)
         create_dir(values_folder)
 
-        create_file(absolute_path_from(app_folder, 'proguard-rules.pro'), '')
+        create_file(absolute_path_from(app_folder, 'proguard-rules.pro'), 
+                    read_file_content(from_this(os.path.join('templates', 'module', 'proguard-rules.pro'))))
         create_file(absolute_path_from(app_folder, 'build.gradle'),
                     read_file_content(from_this(os.path.join('templates', 'module', 'build.gradle'))) % internal_pkg)
         create_file(absolute_path_from(android_test_folder, 'ExampleInstrumentedTest.java'),

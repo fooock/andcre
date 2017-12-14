@@ -106,6 +106,8 @@ You can change the activity title. For more info see [the documentation](https:/
 * [Timber](https://github.com/JakeWharton/timber)
 * [Butterknife](http://jakewharton.github.io/butterknife/)
 * [Google OSS Licenses](https://developers.google.com/android/guides/opensource)
+* [Retrofit 2](http://square.github.io/retrofit/)
+* [OkHttp3](https://github.com/square/okhttp)
 
 For application debug, I included:
 * [Leak Canary](https://github.com/square/leakcanary)
@@ -115,6 +117,7 @@ For application testing:
 * [JUnit 4.12](http://junit.org/junit4/)
 * [Mockito](http://site.mockito.org/)
 * [Espresso](https://developer.android.com/training/testing/espresso/index.html)
+* [OkHttp Mock Web Server](https://github.com/square/okhttp)
 
 ## Final Android project
 The result project structure is like this:
