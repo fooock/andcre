@@ -31,8 +31,8 @@ class Project(object):
         create_file(absolute_path_from(self.abs_path, 'LICENSE.txt'), '')
         create_file(absolute_path_from(self.abs_path, '.gitignore'),
                     read_file_content(from_this(os.path.join('templates', 'gitignore'))))
-        create_file(absolute_path_from(self.abs_path, 'TODO.md'), '* Add application icon')
-        create_file(absolute_path_from(self.abs_path, 'CHANGELOG.md'), "* v0.1 Project started! ({})"
+        create_file(absolute_path_from(self.abs_path, 'TODO.md'), '# TODOs\n* Add application icon')
+        create_file(absolute_path_from(self.abs_path, 'CHANGELOG.md'), "# Changelog\n* v0.1 Project started! ({})"
                     .format(time.strftime("%c")))
         create_file(absolute_path_from(self.abs_path, 'gradlew'),
                     read_file_content(from_this(os.path.join('templates', 'gradle', 'gradlew.sh'))))
