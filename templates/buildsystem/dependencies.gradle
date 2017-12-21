@@ -10,6 +10,7 @@ ext {
     retrofitVersion = "2.3.0"
     okhttp3Version = "3.9.1"
     daggerVersion = "2.11"
+    retrofitConverterVersion = "2.3.0"
 
     junitVersion = "4.12"
     espressoVersion = "2.2.2"
@@ -27,7 +28,8 @@ ext {
             retrofit            : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
             okhttp3             : "com.squareup.okhttp3:okhttp:${okhttp3Version}",
             dagger              : "com.google.dagger:dagger:${daggerVersion}",
-            daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}"
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            retrofitConverter   : "com.squareup.retrofit2:converter-gson:${retrofitConverterVersion}"
     ]
 
     appTest = [

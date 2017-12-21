@@ -62,6 +62,9 @@ dependencies {
     implementation rootProject.ext.appLibraries.ossLicenses
     implementation rootProject.ext.appLibraries.retrofit
     implementation rootProject.ext.appLibraries.okhttp3
+    implementation rootProject.ext.appLibraries.retrofitConverter
+    implementation rootProject.ext.appLibraries.dagger
+    annotationProcessor rootProject.ext.appLibraries.daggerCompiler
 
     testImplementation rootProject.ext.appTest.junit
     testImplementation rootProject.ext.appTest.mockito
