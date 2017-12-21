@@ -106,8 +106,9 @@ You can change the activity title. For more info see [the documentation](https:/
 * [Timber](https://github.com/JakeWharton/timber)
 * [Butterknife](http://jakewharton.github.io/butterknife/)
 * [Google OSS Licenses](https://developers.google.com/android/guides/opensource)
-* [Retrofit 2](http://square.github.io/retrofit/)
+* [Retrofit 2 & Gson converter](http://square.github.io/retrofit/)
 * [OkHttp3](https://github.com/square/okhttp)
+* [Dagger2](https://google.github.io/dagger/)
 
 For application debug, I included:
 * [Leak Canary](https://github.com/square/leakcanary)
