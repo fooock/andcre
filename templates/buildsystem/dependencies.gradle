@@ -3,7 +3,6 @@ ext {
     constraintLayoutVersion = "1.0.2"
     timberVersion = "4.6.0"
     butterknifeVersion = "8.8.1"
-    butterknifeProcessorVersion = "8.8.1"
     leakCanaryVersion = "1.5.1"
     ossLicensesVersion = "11.6.0"
     stethoVersion = "1.5.0"
@@ -21,7 +20,7 @@ ext {
             constraintLayout    : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
             timber              : "com.jakewharton.timber:timber:${timberVersion}",
             butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
-            butterknifeProcessor: "com.jakewharton:butterknife-compiler:${butterknifeProcessorVersion}",
+            butterknifeProcessor: "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
             leakCanary          : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
             ossLicenses         : "com.google.android.gms:play-services-oss-licenses:${ossLicensesVersion}",
             stetho              : "com.facebook.stetho:stetho:${stethoVersion}",
